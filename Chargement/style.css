@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+h1
+{ color: aqua;
+  text-align: center;
+}
+
+#Boite
+{
+  height: 250px;
+  width: 400px;
+  background: salmon;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#Chargement1
+{
+  background:pink;
+  position: relative;
+  border-radius:50%;
+  width: 30%;
+  height: 40%;
+  animation-name: loader;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#Chargement2
+{
+  background:pink;
+  position: relative;
+  bottom: 100px;
+  left: 130px;
+  border-radius:50%;
+  width: 30%;
+  height: 40%;
+  animation-name: loader;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+#Chargement3
+{
+  background:pink;
+  position: relative;
+  bottom: 200px;
+  left: 260px;
+  border-radius:50%;
+  width: 30%;
+  height: 40%;
+  animation-name: loader;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader
+{
+  0% {background: pink;}
+  100% {background: salmon;}
+
+}
+
