@@ -1,0 +1,47 @@
+#content
+{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    background: salmon;
+    border-radius: 10px;
+    padding: 5px;
+    animation: content;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+h2
+{
+    text-align: center
+    
+}
+
+#carre
+{
+    position: absolute;
+    left: 900px;
+    background: pink;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    margin: auto;
+    animation: carre;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes carre
+{
+    0% {background: pink;}
+    25% {background: rosybrown; transform: rotate(720deg);}
+    100% {background: pink;transform: rotate(-360deg);}
+}
+
+ @keyframes content {
+  0% {background: salmon;}
+  25% {background: palevioletred; transform: rotate(-720deg);}
+  100% {background: salmon;transform: rotate(360deg);}
+} 
