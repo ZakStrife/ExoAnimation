@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+
+h1
+{ 
+  font-family: 'Caveat', cursive;
+  color: beige;
+  text-align: center;
+}
+
+#Boite
+{
+  position: relative;
+  height: 300px;
+  width: 650px;
+  background: salmon;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+#carre1, #carre2, #carre3, #carre4, #carre5, #carre6, #carre7
+{
+  position: absolute;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  top: 5px;
+  left: 10px;
+  border-radius: 25px;
+  animation-name: Suite;
+}
+
+#carre1
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+#carre2
+{
+
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+#carre3
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+#carre4
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+#carre5
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+#carre6
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+#carre7
+{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+}
+
+@keyframes Suite
+{
+  0% {background: rgb(240, 27, 27); top: 5px; left:10px;}
+  10% {background: rgb(42, 42, 255); top: 5px; left:580px; transform: rotate(720deg);}
+  25% {background: rgb(42, 255, 42); top: 230px; left:580px; transform: rotate(720deg);}
+  35% {background: rgb(255, 27, 27); top: 230px; left:10px; transform: rotate(2060deg);}
+  50% {background: rgb(42, 42, 255); top: 5px; left:10px; transform: rotate(1440deg);}
+  60% {background: rgb(42, 42, 255); top: 5px; left:580px;  transform: rotate(1800deg);}
+  75% {background: rgb(42, 255, 42); top: 230px; left:580px; transform: rotate(2060deg);}
+  85% {background: rgb(255, 27, 27); top: 230px; left:10px; transform: rotate(2320deg);}
+  100% {background: rgb(255, 27, 27); top: 5px; left:10px; transform: rotate(2480deg);}
+}
